@@ -28,7 +28,7 @@ func main() {
 		mode = mode ^ os.ModeDir
 	}
 
-	fmt.Printf("0%o\t%v\n", mode, path.Clean(fileName))
+	fmt.Printf("%04o\t%v\n", mode, path.Clean(fileName))
 }
 
 func fail(err error) {
